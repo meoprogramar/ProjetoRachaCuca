@@ -88,7 +88,7 @@
           <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\Downloads\trophy (1).png"/>
+          <Image iconType="3" name="/Imagens/trophy (1).png"/>
         </Property>
       </Properties>
     </Component>

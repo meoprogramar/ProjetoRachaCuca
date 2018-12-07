@@ -59,7 +59,7 @@ public class TelaFinal extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\Downloads\\trophy (1).png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/trophy (1).png"))); // NOI18N
 
         lblquarto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblquarto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

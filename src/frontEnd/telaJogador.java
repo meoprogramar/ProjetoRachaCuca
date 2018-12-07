@@ -55,7 +55,6 @@ public class telaJogador extends javax.swing.JFrame {
     public void inserirRanking()
     {
         insertSort(ranking);     
-        System.out.println(ranking.size());
         
             lbljogador01.setText(ranking.get(0).nome); lblptsjogador01.setText(ranking.get(0).pont+"");
             if(ranking.size()>=2)
@@ -130,6 +129,7 @@ public class telaJogador extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         lblDica = new javax.swing.JTextPane();
         jLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -222,7 +222,7 @@ public class telaJogador extends javax.swing.JFrame {
         lblDica.setForeground(new java.awt.Color(57, 57, 57));
         jScrollPane1.setViewportView(lblDica);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Raktic\\Desktop\\ProjetoJanderson\\logomenor.png")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/logomenor.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -242,15 +242,23 @@ public class telaJogador extends javax.swing.JFrame {
                             .addComponent(btnConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(67, 67, 67))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel11)
+                        .addGap(5, 5, 5)
                         .addComponent(jLabel1)
                         .addGap(174, 174, 174))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(75, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
@@ -308,7 +316,7 @@ public class telaJogador extends javax.swing.JFrame {
         lblptsjogador04.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblptsjogador04.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\NetBeansProject\\ProjetoFinalLEDA\\src\\ProjetoJanderson\\trophy (2).png")); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/trophy (2).png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -405,7 +413,7 @@ public class telaJogador extends javax.swing.JFrame {
         lblquarto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblquarto.setPreferredSize(new java.awt.Dimension(33, 17));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("D:\\Documentos\\NetBeansProject\\ProjetoFinalLEDA\\src\\ProjetoJanderson\\line.png")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/line.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -481,7 +489,6 @@ public class telaJogador extends javax.swing.JFrame {
         String resposta = cmpResposta.getText();
         if(!resposta.equals(""))
         {
-            System.out.println(resultado);
             if (resultado.equals(resposta)) {
                 JOptionPane.showMessageDialog(null, "Parabéns, você acertou! Resposta: "+resultado);
                 heap.extractMax(participantes);
@@ -544,6 +551,7 @@ public class telaJogador extends javax.swing.JFrame {
     private javax.swing.JTextField cmpResposta;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

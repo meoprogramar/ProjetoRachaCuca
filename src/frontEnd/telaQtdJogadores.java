@@ -177,7 +177,7 @@ public class telaQtdJogadores extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(230, 250, 360, 150);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("D:\\Downloads\\team.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/team.png"))); // NOI18N
         getContentPane().add(jLabel6);
         jLabel6.setBounds(330, 60, 130, 110);
 
