@@ -5,4 +5,5 @@ O software se trata de um jogo de adivinhar, onde dicas são mostradas na interf
 
 Participação: Mateus Cavalcante Honorato.
 
-![rachacuca](https://user-images.githubusercontent.com/34866806/49674302-ac533380-fa58-11e8-8acd-936b43709614.png)
+![rachacuca](https://user-images.githubusercontent.com/34866806/49674560-8ed29980-fa59-11e8-881c-1e1026a5a7ea.png)
+
